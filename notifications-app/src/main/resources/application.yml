@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        subscriptionOnMoneyTransferredChannel:
+          destination: "moneyTransferredExchange"
+          durableSubscription: true
+  rabbitmq:
+    host: "rabbitmq"
+server:
+  port: 8082
